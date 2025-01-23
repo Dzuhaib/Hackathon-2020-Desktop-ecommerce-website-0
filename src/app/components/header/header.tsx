@@ -41,6 +41,15 @@ const Header = () => {
               className="hover:opacity-75"
             />
           </Link>
+          <Link href="/dashboard" aria-label="User Icon">
+              <Image
+                src="/icons/search.png"
+                alt="Serach Icon"
+                width={20}
+                height={20}
+                className="hover:opacity-75 cursor-pointer"
+              />
+            </Link>
           <Link href="#" aria-label="Wishlist Icon">
             <Image
               src="/icons/wishlist1.png"
@@ -94,6 +103,15 @@ const Header = () => {
               <Image
                 src="/icons/profile1.png"
                 alt="User Icon"
+                width={24}
+                height={24}
+                className="hover:opacity-75 cursor-pointer"
+              />
+            </Link>
+            <Link href="/dashboard" aria-label="User Icon">
+              <Image
+                src="/icons/search.png"
+                alt="Serach Icon"
                 width={24}
                 height={24}
                 className="hover:opacity-75 cursor-pointer"

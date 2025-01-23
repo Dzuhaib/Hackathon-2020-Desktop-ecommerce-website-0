@@ -17,4 +17,4 @@ export default function Home() {
       <Section5 />
     </div>
   );
-}
+};

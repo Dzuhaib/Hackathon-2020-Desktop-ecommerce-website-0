@@ -62,8 +62,8 @@ const Section3 = () => {
             <h3 className="font-semibold text-black  mb-4">Rs. 25,000.00</h3>
           </div>
         </div>
-        <div className="text-center mt-4">
-          <button className="bg-transparent text-black border-b-2 pb-2 text-[20px] border-b-black">Shop now</button>
+        <div className="text-center">
+          <button className="bg-transparent text-black border-b-2 pb-2 text-[20px] border-b-black">See more</button>
         </div>
       </div>
     </div>

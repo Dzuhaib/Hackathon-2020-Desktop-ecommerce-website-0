@@ -8,31 +8,25 @@ import Link from "next/link";
 export default function ProductPage() {
 
   const [quantity, setQuantity] = useState(1);
-  const [showPopup, setShowPopup] = useState(false); // State to show popup
+  const [showPopup, setShowPopup] = useState(false); 
 
   const incrementQuantity = () => setQuantity(quantity + 1);
   const decrementQuantity = () => quantity > 1 && setQuantity(quantity - 1);
 
-  // Show popup when item is added to cart
   const handleAddToCart = () => {
     setShowPopup(true);
-    setTimeout(() => setShowPopup(false), 3000); // Hide popup after 3 seconds
+    setTimeout(() => setShowPopup(false), 3000);
   };
 
   return (
     <div className="px-10 py-16 bg-gray-50">
-      {/* Breadcrumb */}
       <nav className="text-sm text-gray-600 mb-8">
         <span>Home</span> <span className="mx-2">/</span>
         <span>Shop</span> <span className="mx-2">/</span>
         <span className="text-gray-900 font-semibold">Asgaard sofa</span>
       </nav>
-
-      {/* Product Section */}
       <div className="flex flex-col lg:flex-row gap-10">
-        {/* Left: Product Gallery and Main Image (50%) */}
         <div className="flex w-full lg:w-1/2 gap-4">
-          {/* Product Gallery */}
           <div className="flex flex-col gap-4 w-1/4">
             <div className="relative flex items-center bg-cream2 w-full h-[150px] rounded-lg overflow-hidden">
               <Image
@@ -63,7 +57,6 @@ export default function ProductPage() {
             </div>
           </div>
 
-          {/* Main Product Image */}
           <div className="relative w-3/4 flex justify-center items-center bg-cream2 h-[500px] rounded-lg overflow-hidden">
             <Image
               src="/images/product1/asgaarda.png"
@@ -174,7 +167,6 @@ export default function ProductPage() {
         </div>
       </div>
 
-      {/* Popup shopup */}
       {showPopup && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
@@ -202,7 +194,6 @@ export default function ProductPage() {
         </div>
       )}
 
-      {/* Related Products */}
       <div className="py-10">
         <h1 className="text-[34px] text-center font-semibold">
           Related Products
